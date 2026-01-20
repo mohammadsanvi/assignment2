@@ -46,18 +46,15 @@
       <section
         class="relative bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat mb-8 lg:min-h-screen overflow-hidden flex flex-col items-center"
       >
-     
         <div
           class="relative w-full flex justify-center items-center h-[300px] sm:h-[360px] md:h-[420px] mt-16"
         >
-          <!-- 🟣 Circle -->
           <img
             src="./assets/hero-circle.png"
             alt="circle"
             class="absolute w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[360px] md:h-[360px] z-10"
           />
 
-          <!-- 🎤 Microphone -->
           <img
             src="./assets/microphone.png"
             alt="microphone"
@@ -65,7 +62,6 @@
           />
         </div>
 
-    
         <div class="text-center px-4 max-w-xl mt-4">
           <h1
             class="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl mb-3"
@@ -83,7 +79,11 @@
             <button
               class="bg-gradient-to-tr from-yellow-500 via-pink-500 to-blue-700 px-5 py-3 text-white font-semibold rounded-full flex items-center gap-2"
             >
-              <img class="h-4 w-4 border-none" src="./assets/spotify.png" alt="" />
+              <img
+                class="h-4 w-4 border-none"
+                src="./assets/spotify.png"
+                alt=""
+              />
               Listen on Spotify
             </button>
 
@@ -98,9 +98,9 @@
       </section>
     </header>
 
-    <!-- ================= MAIN ================= -->
+
     <main>
-      <!-- ========== ABOUT SECTION ========== -->
+
       <section
         class="bg-[#1e0b36] text-white text-center md:pt-16 px-6 sm:px-10 md:px-20 xl:px-52 pb-32"
       >
@@ -148,7 +148,165 @@
           </div>
         </div>
       </section>
-     
+      <!-- Why Choose TechWave -->
+      <section class="lg:px-52 lg:py-32 px-5 py-10">
+        <h2 class="text-white text-center font-bold text-5xl mb-10">
+          Why Choose TechWave
+        </h2>
+        <div
+          class="text-white grid gap-4 md:gap-8 grid-cols-1 md:grid-cols-3 md:grid-rows-3"
+        >
+          <div
+            class="rounded-[40px] bg-[#351165] bg-opacity-40 p-10 md:row-span-2 flex justify-center items-start flex-col"
+          >
+            <img class="h-12 w-12" src="./assets/headphone.png" alt="" />
+            <h3 class="font-bold text-2xl mt-4 mb-4">Premium Audio Quality</h3>
+            <p class="opacity-80">
+              Experience crystal-clear sound with professional-grade recording
+              equipment and expert audio engineering. Every episode is mastered
+              for optimal listening across all devices and platforms.
+            </p>
+          </div>
+
+          <div
+            class="rounded-[40px] bg-[#351165] bg-opacity-40 p-10 md:col-span-2"
+          >
+            <img class="h-12 w-12" src="./assets/device.png" alt="" />
+            <h3 class="font-bold text-2xl mt-4 mb-4">Mobile Friendly</h3>
+            <p class="opacity-80">
+              Listen on the go with seamless mobile experience and offline
+              downloads.
+            </p>
+          </div>
+
+          <div
+            class="rounded-[40px] bg-[#351165] bg-opacity-40 p-10 md:col-span-2"
+          >
+            <img class="h-12 w-12" src="./assets/location.png" alt="" />
+            <h3 class="font-bold text-2xl mt-4 mb-4">Global Community</h3>
+            <p class="opacity-80">
+              Connect with tech enthusiasts from over 120 countries worldwide.
+            </p>
+          </div>
+
+          <div
+            class="rounded-[40px] bg-[#351165] bg-opacity-40 p-10 md:col-span-2"
+          >
+            <img class="h-12 w-12" src="./assets/cxclusive.png" alt="" />
+            <h3 class="font-bold text-2xl mt-4 mb-4">Exclusive Interviews</h3>
+            <p class="opacity-80">
+              Get unprecedented access to industry titans, startup founders, and
+              tech visionaries. Our host secures exclusive conversations you
+              won't find anywhere else, diving deep into their journeys,
+              failures, and success strategies.
+            </p>
+          </div>
+
+          <div class="rounded-[40px] bg-[#351165] bg-opacity-40 p-10">
+            <img class="h-12 w-12" src="./assets/resource.png" alt="" />
+            <h3 class="font-bold text-2xl mt-4 mb-4">Rich Resources</h3>
+            <p class="opacity-80">
+              Access show notes, transcripts, and additional learning materials
+              for every episode.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Episodes -->
+      <section class="md:py-32 md:px-52 py-10 px-5 bg-[#1e0b36]">
+        <!-- Heading -->
+        <h2 class="text-white text-center font-bold text-4xl sm:text-5xl mb-12">
+          Featured Episodes
+        </h2>
+
+        <div
+          class="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="bg-[#351165] bg-opacity-40 rounded-3xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div class="w-full aspect-video">
+              <iframe
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/BjXGV0X6c0k?si=17TzGs1nXTiV_VQA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6 flex flex-col gap-3">
+              <h4 class="text-white text-2xl font-bold">
+                The Future of AI in Everyday Life
+              </h4>
+              <p class="text-white opacity-80 text-sm sm:text-base">
+                Exploring how artificial intelligence is transforming our daily
+                routines and what to expect in the next decade.
+              </p>
+              <span class="text-[#00FF88] flex items-center gap-1 text-sm">
+                <img class="h-4 w-4" src="./assets/clock.png" alt="clock" />42
+                min
+              </span>
+            </div>
+          </div>
+
+          <!-- Episode Card -->
+          <div
+            class="bg-[#351165] bg-opacity-40 rounded-3xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div class="w-full aspect-video">
+              <iframe class="h-full w-full" src="https://www.youtube.com/embed/Sat3AgVTeoY?si=pXJrVdWnGSuloTrK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="p-6 flex flex-col gap-3">
+              <h4 class="text-white text-2xl font-bold">
+               Building Better Habits for Remote Work
+              </h4>
+              <p class="text-white opacity-80 text-sm sm:text-base">
+                Practical strategies for staying productive and maintaining work-life balance in a remote environment.
+              </p>
+              <span class="text-[#00FF88] flex items-center gap-1 text-sm">
+                <img class="h-4 w-4" src="./assets/clock.png" alt="clock" />35
+                min
+              </span>
+            </div>
+          </div>
+
+          <!-- Episode Card -->
+          <div
+            class="bg-[#351165] bg-opacity-40 rounded-3xl overflow-hidden shadow-lg flex flex-col"
+          >
+            <div class="w-full aspect-video">
+             <iframe class="h-full w-full" src="https://www.youtube.com/embed/SJsPOJSGuVc?si=tcordKWn9r6dhIqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="p-6 flex flex-col gap-3">
+              <h4 class="text-white text-2xl font-bold">
+                Career Growth in Tech: A Roadmap
+              </h4>
+              <p class="text-white opacity-80 text-sm sm:text-base">
+              Expert advice on navigating your tech career from junior developer to senior leadership roles.
+              </p>
+              <span class="text-[#00FF88] flex items-center gap-1 text-sm">
+                <img class="h-4 w-4" src="./assets/clock.png" alt="clock" />51
+                min
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- ================= FOOTER ================= -->
