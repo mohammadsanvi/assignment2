@@ -1,39 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <!-- tailwind css cdn-->
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-      <!-- link to css file -->
-       <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Tech Wave</title>
-</head>
-<body class="inter">
-    <header class="bg-[#281146]">
-        <nav class="p-4 text-white flex justify-around items-center">
-            <img class="w-[219px] h-8" src="./assets/logo.png" alt="">
-            <div>
-                <ul class="flex gap-8 font-medium">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Episodes</a></li>
-                    <li><a href="#">Host</a></li>
-                </ul>
-            </div>
-            <div><button class="bg-gradient-to-tr from-yellow-500 via-pink-500 to-blue-700 px-4 py-3 rounded-full flex gap-1">Subscribe <img src="./assets/ArrowRight.png"></button></div>
-        </nav>
-    </header>
+  </head>
+
+  <body class="bg-[#1e0b36] inter">
+    <!-- ================= HEADER ================= -->
+    <header>
+      <!-- ========== NAVBAR ========== -->
+      <nav
+        class="p-4 text-white flex justify-between items-center max-w-7xl mx-auto"
+      >
+        <img class="w-[200px]" src="./assets/logo.png" alt="logo" />
+
+        <ul class="hidden md:flex gap-8 font-medium">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Episodes</a></li>
+          <li><a href="#">Host</a></li>
+        </ul>
+
+        <button
+          class="bg-gradient-to-tr from-yellow-500 via-pink-500 to-blue-700 px-5 py-3 border-none rounded-full items-center gap-1 text-sm hidden md:flex"
+        >
+          Subscribe
+          <img src="./assets/ArrowRight.png" alt="" />
+        </button>
+        <img class="md:hidden h-3 w-4 flex" src="./assets/hamburger-menu.png" />
+      </nav>
+
+      <!-- ========== HERO SECTION ========== -->
+      <section
+        class="relative bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat mb-8 lg:min-h-screen overflow-hidden flex flex-col items-center"
+      >
+     
+        <div
+          class="relative w-full flex justify-center items-center h-[300px] sm:h-[360px] md:h-[420px] mt-16"
+        >
+          <!-- 🟣 Circle -->
+          <img
+            src="./assets/hero-circle.png"
+            alt="circle"
+            class="absolute w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[360px] md:h-[360px] z-10"
+          />
+
+          <!-- 🎤 Microphone -->
+          <img
+            src="./assets/microphone.png"
+            alt="microphone"
+            class="relative w-[42px] sm:w-[60px] md:w-[108px] z-20"
+          />
+        </div>
+
     
+        <div class="text-center px-4 max-w-xl mt-4">
+          <h1
+            class="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl mb-3"
+          >
+            TechWave
+          </h1>
 
+          <p class="text-white opacity-80 text-sm sm:text-base">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+
+          <!-- 🔘 Buttons -->
+          <div class="mt-6 flex flex-row sm:flex-row gap-4 justify-center">
+            <button
+              class="bg-gradient-to-tr from-yellow-500 via-pink-500 to-blue-700 px-5 py-3 text-white font-semibold rounded-full flex items-center gap-2"
+            >
+              <img class="h-4 w-4 border-none" src="./assets/spotify.png" alt="" />
+              Listen on Spotify
+            </button>
+
+            <button
+              class="text-[#00FF88] px-6 py-3 border border-[#00FF88] rounded-full flex items-center gap-2"
+            >
+              <img src="./assets/message.png" alt="" />
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- ================= MAIN ================= -->
     <main>
+      <!-- ========== ABOUT SECTION ========== -->
+      <section
+        class="bg-[#1e0b36] text-white text-center md:pt-16 px-6 sm:px-10 md:px-20 xl:px-52 pb-32"
+      >
+        <h3 class="text-3xl sm:text-4xl lg:text-5xl font-medium mb-6">
+          About the Podcast
+        </h3>
 
+        <p class="opacity-80 text-sm sm:text-base max-w-3xl mx-auto">
+          TechWave is your go-to podcast for staying ahead in the fast-paced
+          world of technology.
+          <br class="hidden sm:block" />
+          We break down complex topics into digestible insights, explore
+          productivity strategies that actually work,
+          <br class="hidden sm:block" />
+          and share stories of personal growth from industry leaders.
+        </p>
+
+        <p class="opacity-80 mt-6">
+          Join thousands of young professionals and tech enthusiasts who start
+          their day with TechWave.
+        </p>
+
+        <!-- STATS -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-20 border-t border-[#c0baba55] pt-16"
+        >
+          <div>
+            <h2 class="text-[#00FF88] font-black text-4xl">150K+</h2>
+            <p class="opacity-80">Monthly Listeners</p>
+          </div>
+
+          <div>
+            <h2 class="text-[#00FF88] font-black text-4xl">200+</h2>
+            <p class="opacity-80">Episodes Published</p>
+          </div>
+
+          <div>
+            <h2 class="text-[#00FF88] font-black text-4xl">4.9★</h2>
+            <p class="opacity-80">Average Rating</p>
+          </div>
+
+          <div>
+            <h2 class="text-[#00FF88] font-black text-4xl">50+</h2>
+            <p class="opacity-80">Industry Experts</p>
+          </div>
+        </div>
+      </section>
+     
     </main>
 
-    <footer>
-
+    <!-- ================= FOOTER ================= -->
+    <footer class="text-center text-white opacity-60 py-6 text-sm">
+      © 2026 TechWave. All rights reserved.
     </footer>
+  </body>
 </html>
